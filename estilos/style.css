@@ -1,0 +1,36 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+}
+
+header{
+    text-align: center;
+    background-color: brown;
+}
+
+header > p{
+    padding: 10px 0px;
+}
+
+main{
+
+}
+
+section.fu-branco{
+    background-color: aqua;
+}
+
+section > p{
+    margin: 50px 10px 80px 30px;
+}
+
+footer{
+    text-align: center;
+    background-color: brown;
+}

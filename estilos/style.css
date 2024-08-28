@@ -1,36 +1,123 @@
 @charset 'UTF-8';
 
+@font-face {
+    font-family: 'Eldes Cordel';
+    src: url(/fontes/EldesCordel-Demo.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'Cordel';
+    src: url(/fontes/Cordel\ Encarnado\ II.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'Sricha';
+    src: url(/fontes/Sriracha-Regular.ttf) format(truetype);
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
+:root{
+    --font-titulo: 'Eldes Cordel', 'Serif';
+    --font-text: 'Sricha', 'Arial', 'Sans-serif';
+
+    --cor1: #e5c969;
+    --cor2: #fcb041;
+    --cor3: #882d1b;
+}
+
 body{
-    
+    background-color: var(--cor2);
+}
+
+header > p > a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+header > p > a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+header > p > a:hover::after{
+    content: '\1F517';
 }
 
 header{
+    background-color: var(--cor3);
+    min-height: 200px;
+}
+
+h1#titulo-principal{
+    font-family: var(--font-titulo);
+    font-size: 5.4em;
     text-align: center;
-    background-color: brown;
+    padding: 50px 5px 0px 5px;
 }
 
 header > p{
-    padding: 10px 0px;
-}
-
-main{
-
+    padding: 0px 2px 40px 0px;
+    font-family: 'Cordel';
+    font-size: 1.3em;
+    color: var(--cor2);
+    text-align: center;
 }
 
 section.fu-branco{
-    background-color: aqua;
+    
 }
 
 section > p{
-    margin: 50px 10px 80px 30px;
+    margin: 50px 30px 80px 30px;
+    padding: 10px;
+    font-family: var(--font-text);
+    font-size: 2.4em;
+}
+
+section#i-flor{
+    background: white url(/imagens/background001.jpg) center right/cover no-repeat fixed;
+    min-height: 600px;
+}
+#i-flor > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+}
+
+section#i-livro{
+    background-color: white;
+    background-image: url(/imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom left;
+    min-height: 600px;
+}
+#i-livro > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
 }
 
 footer{
     text-align: center;
-    background-color: brown;
+    background-color: var(--cor3);
+}
+
+footer > p{
+    font-family: 'Cordel';
+}
+
+footer > p > a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+footer > p > a:hover{
+    color: white;
 }

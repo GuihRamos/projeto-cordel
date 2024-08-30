@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: 'Eldes Cordel';
-    src: url(/fontes/EldesCordel-Demo.otf) format(opentype);
+    src: url(../fontes/EldesCordel-Demo.otf) format(opentype);
 }
 
 @font-face {
     font-family: 'Cordel';
-    src: url(/fontes/Cordel\ Encarnado\ II.otf) format(opentype);
+    src: url(../fontes/Cordel\ Encarnado\ II.otf) format(opentype);
 }
 
 @font-face {
     font-family: 'Sricha';
-    src: url(/fontes/Sriracha-Regular.ttf) format(truetype);
+    src: url(../fontes/Sriracha-Regular.ttf) format(truetype);
 }
 
 *{
@@ -75,7 +75,7 @@ section > p{
 }
 
 section#i-flor{
-    background: white url(/imagens/background001.jpg) center right/cover no-repeat fixed;
+    background: white url(../imagens/background001.jpg) center right/cover no-repeat fixed;
     box-shadow: -1px 0px 4px 1px #0000002e;
 }
 #i-flor > p{
@@ -86,7 +86,7 @@ section#i-flor{
 }
 
 section#i-livro{
-    background: white url(/imagens/background002.jpg) bottom left/cover no-repeat fixed;
+    background: white url(../imagens/background002.jpg) bottom left/cover no-repeat fixed;
     box-shadow: -1px 0px 4px 1px #0000002e;
 }
 #i-livro > p{

@@ -49,75 +49,66 @@ header > p > a:hover::after{
 
 header{
     background-color: var(--cor3);
-    min-height: 200px;
 }
 
-h1#titulo-principal{
+#titulo-principal{
     font-family: var(--font-titulo);
-    font-size: 5.4em;
+    font-size: 8lvw;
     text-align: center;
-    padding: 50px 5px 0px 5px;
+    padding: 4lvw 0lvw 0lvw 0lvw;
+    text-shadow: -2px 3px 7px #00000075;
 }
 
 header > p{
-    padding: 0px 2px 40px 0px;
+    padding: 0lvw 0lvw 3lvw 0lvw;
     font-family: 'Cordel';
-    font-size: 1.3em;
+    font-size: 2.2lvw;
     color: var(--cor2);
     text-align: center;
 }
 
-section.fu-branco{
-    
-}
-
 section > p{
-    margin: 50px 30px 80px 30px;
-    padding: 10px;
+    margin: 8lvw 2lvw;
+    padding: 1lvw;
     font-family: var(--font-text);
-    font-size: 2.4em;
+    font-size: 3.4lvw;
 }
 
 section#i-flor{
     background: white url(/imagens/background001.jpg) center right/cover no-repeat fixed;
-    min-height: 600px;
+    box-shadow: -1px 0px 4px 1px #0000002e;
 }
 #i-flor > p{
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.541);
     color: white;
+    border-radius: 4px;
 }
 
 section#i-livro{
-    background-color: white;
-    background-image: url(/imagens/background002.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: bottom left;
-    min-height: 600px;
+    background: white url(/imagens/background002.jpg) bottom left/cover no-repeat fixed;
+    box-shadow: -1px 0px 4px 1px #0000002e;
 }
 #i-livro > p{
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.541);
     color: white;
+    border-radius: 4px;
 }
 
 footer{
     text-align: center;
     background-color: var(--cor3);
-}
-
-footer > p{
     font-family: 'Cordel';
+    font-size: 2lvw;
 }
 
 footer > p > a{
     color: black;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 2.2lvw;
 }
 
 footer > p > a:hover{
-    color: white;
+    color: var(--cor2);
 }
